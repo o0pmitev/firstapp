@@ -1,3 +1,92 @@
 // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+/********************* NAVIGATION *********************/
+.navbar-brand {
+  font-family: 'Biryani', sans-serif;
+  color: red !important;
+}
+
+.nav-item {
+  color: red !important;
+  margin-left: 10px;
+  text-transform: uppercase;
+  font-family: 'Biryani', sans-serif;
+}
+
+#navbarID {
+  background-color: brown!important;
+}
+
+nav a:hover {
+  color: orange !important;
+  text-decoration: none;
+  transition: color 600ms;
+  -webkit-transition: color 600ms;
+}
+
+.nav-item a {
+  color: red !important;
+}
+
+/********************* global-style *********************/
+body {
+  background: url( asset-path('background.jpg') ) no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+.header-layout {
+  margin-top: 53px;
+}
+.container {
+  height: 850px;
+  // background: url( asset-path('background.jpg') ) no-repeat;
+  // background-size: 100% 100%;
+}
+
+/********************* INDEX PAGE *********************/
+header {
+  text-align: center;
+  color: #ffe007;
+  text-shadow: 0.5px 0.5px black;
+  font-family: 'Black And White Picture', sans-serif;
+}
+
+.book1 {
+  width: 200px;
+  border: 2px solid black;
+}
+
+/********************* ABOUT PAGE *********************/
+.about-header {
+  text-align: center;
+  color: #ffe007;
+  text-shadow: 0.5px 0.5px black;
+}
+.about-header h1 {
+  font-family: 'Black And White Picture', sans-serif;
+}
+.about-header p {
+  font-family:'Biryani', sans-serif;
+}
+/******************** CONTACT PAGE ********************/
+.contact-header {
+  color: #ffe007;
+  text-shadow: 0.5px 0.5px black;
+}
+.contact-header h1 {
+  text-align: center;
+  font-family: 'Black And White Picture', sans-serif;
+}
+.contact-header ul {
+  list-style-type: none;
+  text-align: center;
+  margin-right: 30px;
+  font-family:'Biryani', sans-serif;
+}
+
+/********************* FOOTER *********************/
+footer p {
+  font-size: 0.8em;
+  float: left;
+}
