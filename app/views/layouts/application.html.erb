@@ -19,6 +19,9 @@
   </head>
 
   <body>
+
+  <div class="container">
+
     <!-- NAVIGATION -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation" id="navbarID">
 
@@ -32,6 +35,7 @@
           <li class="nav-item"><%= link_to "Home", root_path %></li>
           <li class="nav-item"><%= link_to "About", simple_pages_about_path %></li>
           <li class="nav-item"><%= link_to "Contact", simple_pages_contact_path %></li>
+          <li class="nav-item"><%= link_to "Books", products_path %></li>
         </ul>
       </div><!-- /menu -->
     </nav>
@@ -42,5 +46,8 @@
     <footer>
       <p>&copy; 2018 Books Berlin</p>
      </footer>
+
+
+  </div><!-- /container -->
   </body>
 </html>

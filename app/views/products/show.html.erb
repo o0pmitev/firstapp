@@ -1,3 +1,5 @@
+<div class="container">
+
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -15,5 +17,16 @@
   <%= @product.image_url %>
 </p>
 
+<p>
+  <strong>Genre: </strong>
+  <%= @product.genre %>
+</p>
+
+<p>
+  <strong>$</strong>
+  <%= @product.price %>
+</p>
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
+
+</div>

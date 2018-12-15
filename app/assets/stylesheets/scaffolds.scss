@@ -1,6 +1,6 @@
 body {
   background-color: #fff;
-  color: #333;
+  color: white;
   margin: 33px;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
@@ -81,4 +81,20 @@ div {
 
 label {
   display: block;
+}
+
+
+/* production page */
+
+#product-page-style {
+  color: white;
+}
+
+#new-product-heading {
+  margin-top: 70px;
+  color: white;
+}
+
+#notice {
+  margin-top: 70px;
 }

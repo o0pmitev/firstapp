@@ -36,7 +36,7 @@ body {
   background-attachment: fixed;
 }
 .header-layout {
-  margin-top: 53px;
+  margin-top: 65px;
 }
 .container {
   height: 850px;
@@ -52,8 +52,9 @@ header {
 }
 
 .book1 {
-  width: 200px;
-  border: 2px solid black;
+  margin-top: 146px;
+  width: 500px;
+  height: 400px;
 }
 
 /********************* ABOUT PAGE *********************/
@@ -83,6 +84,46 @@ header {
   margin-right: 30px;
   font-family:'Biryani', sans-serif;
 }
+/********************* BOOKS *********************/
+#new-product-heading {
+  font-size: 90px;
+  color: #ffe007;
+  text-shadow: 0.5px 0.5px black;
+  font-family: 'Black And White Picture', sans-serif;
+}
+
+.img-fluid {
+  border: outset yellow 2px;
+  height: 503px;
+  width: 337px;
+}
+
+.name-class{
+  text-align: center;
+  margin: 10px 0;
+  font-size: 17px;
+  color: yellow;
+}
+.description-class {
+  color:#f1ce82;
+  font-size: 13px;
+}
+
+.genre-class {
+  margin-top: 20px;
+  color: wightblue;
+  font-style: italic;
+}
+
+.manipulate-class {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  text-align: center;
+  border: dotted  2px #7d7d5f38;
+  border-radius: 20px;
+  background-color: #3535299c;
+}
+
 
 /********************* FOOTER *********************/
 footer p {
