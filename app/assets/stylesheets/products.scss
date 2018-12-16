@@ -1,3 +1,42 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+/********************* BOOKS *********************/
+#new-product-heading {
+  font-size: 90px;
+  color: #ffe007;
+  text-shadow: 0.5px 0.5px black;
+  font-family: 'Black And White Picture', sans-serif;
+}
+
+.img-fluid {
+  border: outset yellow 2px;
+  height: 400px;
+  width: 100%;
+}
+
+.name-class{
+  text-align: center;
+  margin: 10px 0;
+  font-size: 17px;
+  color: yellow;
+}
+.description-class {
+  color:#f1ce82;
+  font-size: 13px;
+}
+
+.genre-class {
+  margin-top: 20px;
+  color: wightblue;
+  font-style: italic;
+}
+
+.manipulate-class {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  text-align: center;
+  border: dotted  2px #7d7d5f38;
+  border-radius: 20px;
+  background-color: #3535299c;
+}

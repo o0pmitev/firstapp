@@ -84,49 +84,28 @@ header {
   margin-right: 30px;
   font-family:'Biryani', sans-serif;
 }
-/********************* BOOKS *********************/
-#new-product-heading {
-  font-size: 90px;
-  color: #ffe007;
-  text-shadow: 0.5px 0.5px black;
-  font-family: 'Black And White Picture', sans-serif;
-}
-
-.img-fluid {
-  border: outset yellow 2px;
-  height: 400px;
-  width: 100%;
-}
-
-.name-class{
-  text-align: center;
-  margin: 10px 0;
-  font-size: 17px;
-  color: yellow;
-}
-.description-class {
-  color:#f1ce82;
-  font-size: 13px;
-}
-
-.genre-class {
-  margin-top: 20px;
-  color: wightblue;
-  font-style: italic;
-}
-
-.manipulate-class {
-  margin-top: 5px;
-  margin-bottom: 30px;
-  text-align: center;
-  border: dotted  2px #7d7d5f38;
-  border-radius: 20px;
-  background-color: #3535299c;
-}
-
 
 /********************* FOOTER *********************/
 footer p {
   font-size: 0.8em;
   float: left;
+}
+
+/********************** LANDING PAGE **************/
+.header-layout{
+  text-align: center;
+  font-family: 'Black And White Picture', sans-serif;
+  color: #ffe007;
+}
+
+.carousel-item, image_url {
+  width:100%;
+  height:420px;
+}
+
+.carousel-caption {
+  font-size: 15px;
+  color: #ffe007;
+  text-shadow: 0.5px 0.5px black;
+  text-align: right;
 }
