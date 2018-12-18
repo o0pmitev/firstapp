@@ -25,13 +25,13 @@
     <!-- NAVIGATION -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation" id="navbarID">
 
-      <div class="navbar-brand">BOOKS.BERLIN</div>
+      <div class="navbar-brand"><%= link_to "BOOKS.BERLIN", root_path %></div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="menu collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="nav nav-tabs ml-auto">
+        <ul class="nav nav-pills ml-auto">
           <li class="nav-item"><%= link_to "Home", root_path %></li>
           <li class="nav-item"><%= link_to "About", simple_pages_about_path %></li>
           <li class="nav-item"><%= link_to "Contact", simple_pages_contact_path %></li>
@@ -43,13 +43,15 @@
 
     <%= yield %>
 
-
     <!-- FOOTER -->
     <footer>
       <p>&copy; 2018 Books Berlin</p>
      </footer>
 
 
+
+
   </div><!-- /container -->
+
   </body>
 </html>

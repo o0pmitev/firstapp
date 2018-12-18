@@ -19,6 +19,7 @@
 }
 
 nav a:hover {
+  background-color: #a52a2a !important;
   color: orange !important;
   text-decoration: none;
   transition: color 600ms;
@@ -39,11 +40,17 @@ body {
   margin-top: 65px;
 }
 .container {
-  height: 850px;
+  height: auto;
+}
+footer {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width:100%;
 }
 
-
-/********************* INDEX PAGE *********************/
+/********************* Landing-page *********************/
 header {
   text-align: center;
   color: #ffe007;
@@ -52,11 +59,25 @@ header {
 }
 
 .book1 {
-  margin-top: 146px;
+  margin-top: 107px;
   width: 500px;
   height: 400px;
 }
 
+.landing-page-h1 {
+  font-family: 'Black And White Picture', sans-serif;
+  text-align: center;
+  color: #ffe007;
+  font-size: 92px;
+  margin-top: 70px;
+}
+.landing-page-h2 {
+  font-family: 'Black And White Picture', sans-serif;
+  text-align: center;
+  color: #ffe007;
+  margin-bottom: 0;
+  padding: 0;
+}
 /********************* ABOUT PAGE *********************/
 .about-header {
   text-align: center;
@@ -85,11 +106,6 @@ header {
   font-family:'Biryani', sans-serif;
 }
 
-/********************* FOOTER *********************/
-footer p {
-  font-size: 0.8em;
-  float: left;
-}
 
 /********************** LANDING PAGE **************/
 .header-layout{
@@ -97,15 +113,21 @@ footer p {
   font-family: 'Black And White Picture', sans-serif;
   color: #ffe007;
 }
-
+#carouselExampleIndicators {
+    width: 210px;
+}
 .carousel-item, image_url {
   width:100%;
   height:420px;
+
 }
 
 .carousel-caption {
-  font-size: 15px;
+  font-size: 14px;
   color: #ffe007;
-  text-shadow: 0.5px 0.5px black;
-  text-align: right;
+  text-shadow: 2px 2px black;
+}
+
+.title {
+  color: yellow;
 }

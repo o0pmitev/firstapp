@@ -1,8 +1,13 @@
 <div class="container">
+  <h1 class="landing-page-h1">Books Berlin</h1>
+  <h2 class="landing-page-h2">Bookstore for new books, used books and antique books</h2>
+  <div class="in-stock text-center">
+    <%= image_tag("book1.png", class: "img-responsive book1") %>
+  </div><!-- /in-stock -->
 
-  <h2 class="header-layout">Featured Products :</h2>
+  <h2 class="header-layout">Featured Products</h2>
 
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div id="carouselExampleIndicators" class="carousel slide mx-auto col-xs-12" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -15,9 +20,9 @@
             <%= image_tag(product.image_url) %>
 
             <div class="carousel-caption d-none d-md-block">
-              Title: <%= product.name %><br>
-              <%= product.description %><br>
-              genre: <%= product.genre %>
+              <strong class="title"><%= product.name %></strong><br>
+              <i><%= product.description %></i><br>
+              <strong>genre:</strong> <%= product.genre %>
             </div>
           </div>
         <% end %>
