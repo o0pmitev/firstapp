@@ -5,7 +5,7 @@ class Product < ApplicationRecord
    if Rails.env == "development"
     Product.where("name LIKE ?", "%#{search_term}%")
   elsif Rails.env == "production"
-    Product.where("name LIKE ?", "%#{search_term}%")
+    Product.where("name ILIKE ?", "%#{search_term}%")
   else
   end
 
