@@ -40,3 +40,33 @@
   border-radius: 20px;
   background-color: #3535299c;
 }
+/************ forms ***************/
+
+.form-label {
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+.btn-form {
+  margin-top : 20px;
+  background-color: #a52a2a !important;
+  color: yellow;
+}
+
+.btn-form:hover {
+  background: #a52a2a00 !important;
+  color: yellow;
+}
+
+.form-size {
+  height: 40px;
+  border-radius: 5px;
+  background-color: #fffcfc00;
+  color: yellow;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+.form-margin-bot {
+  margin-bottom: -10px;
+}

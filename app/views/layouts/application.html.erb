@@ -4,7 +4,7 @@
     <title>Firstapp</title>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald|Orbitron|Biryani|Black+And+White+Picture">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald|Orbitron|Biryani|Black+And+White+Picture|Black+Han+Sans">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -29,7 +29,12 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
+      <div class="search">
+        <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
+        <%= form.text_field :q, id: 'q', value: params[:q], class: 'main-search-form' %>
+        <%= form.submit 'Search', class: 'main-search-button' %>
+        <% end %>
+      </div>
       <div class="menu collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="nav nav-pills ml-auto">
           <li class="nav-item"><%= link_to "Home", simple_pages_landing_page_path %></li>
@@ -39,6 +44,7 @@
           <li class="nav-item"><%= link_to "Orders", orders_path%></li>
         </ul>
       </div><!-- /menu -->
+
     </nav>
 
     <%= yield %>

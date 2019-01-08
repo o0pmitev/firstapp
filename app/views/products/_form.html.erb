@@ -13,32 +13,33 @@
   <% end %>
 
   <div class="field" id="product-page-style">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.label :name, class: 'form-label' %>
+    <%= form.text_field :name, class: 'form-size'%>
   </div>
 
   <div class="field" id="product-page-style">
-    <%= form.label :description %>
-    <%= form.text_area :description %>
+    <%= form.label :description, class: 'form-label' %>
+    <%= form.text_area :description, class: 'form-size' %>
   </div>
 
   <div class="field" id="product-page-style">
-    <%= form.label :image_url %>
-    <%= form.text_field :image_url %>
+    <%= form.label :image_url, class: 'form-label' %>
+    <%= form.text_field :image_url, class: 'form-size' %>
   </div>
 
   <div class="field">
-    <%= form.label :genre %><br>
-    <%= form.text_field :genre %>
+    <%= form.label :genre, class: 'form-label form-margin-bot' %><br>
+    <%= form.text_field :genre, class: 'form-size' %>
   </div>
 
   <div class="field">
-    <%= form.label :price %><br>
-    <%= form.text_field :price %>
+    <%= form.label :price, class: 'form-label form-margin-bot' %><br>
+    <%= form.text_field :price, class: 'form-size'%>
   </div>
 
   <div class="actions" id="product-page-style">
-    <%= form.submit %>
+    <%= form.submit class: 'btn btn-success btn-form'%>
   </div>
+
 <% end %>
 </div>
