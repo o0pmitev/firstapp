@@ -18,4 +18,6 @@ Rails.application.routes.draw do
           get 'test', to: redirect("https://determined-goldwasser-32861b.netlify.com/")
 
           get '*path', to: redirect("/error")
+
+post 'simple_pages/thank_you'
 end
