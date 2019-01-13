@@ -5,7 +5,7 @@ default from: "from@example.com"
 
   def contact_form(email, name, message)
   @message = message
-  UserMailer.contact_form(@email, @name, @message).deliver_now
+  ActionMailer.contact_form(@email, @name, @message).deliver_now
 
     mail(from: email,
          to: 'your-email@example.com',

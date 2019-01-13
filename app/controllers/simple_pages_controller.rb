@@ -10,7 +10,7 @@ class SimplePagesController < ApplicationController
     @name = params[:name]
     @email = params[:email]
     @message = params[:message]
-    UserMailer.contact_form(@email, @name, @message).deliver_now
+    ActionMailer.contact_form(@email, @name, @message).deliver_now
   end
 
   def about
