@@ -22,30 +22,10 @@
 
   <div class="container">
 
-    <!-- NAVIGATION -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation" id="navbarID">
+    <%= render 'simple_pages/navbar' %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
 
-      <div class="navbar-brand"><%= link_to "BOOKS.BERLIN", root_path %></div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="search">
-        <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
-        <%= form.text_field :q, id: 'q', value: params[:q], class: 'main-search-form' %>
-        <%= form.submit 'Search', class: 'main-search-button' %>
-        <% end %>
-      </div>
-      <div class="menu collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="nav nav-pills ml-auto">
-          <li class="nav-item"><%= link_to "Home", simple_pages_landing_page_path %></li>
-          <li class="nav-item"><%= link_to "About", simple_pages_about_path %></li>
-          <li class="nav-item"><%= link_to "Contact", simple_pages_contact_path %></li>
-          <li class="nav-item"><%= link_to "Books", products_path %></li>
-          <li class="nav-item"><%= link_to "Orders", orders_path%></li>
-        </ul>
-      </div><!-- /menu -->
-
-    </nav>
     <%= yield %>
 
     <!-- FOOTER -->

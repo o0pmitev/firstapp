@@ -68,3 +68,6 @@ end
 
 #sendgrid
 gem 'sendgrid-ruby'
+
+#Devise
+gem 'devise' 
