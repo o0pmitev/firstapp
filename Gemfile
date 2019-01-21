@@ -71,3 +71,6 @@ gem 'sendgrid-ruby'
 
 #Devise
 gem 'devise' 
+
+#Authorization
+gem 'cancancan', '~> 2.0'
