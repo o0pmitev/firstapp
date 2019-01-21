@@ -1,17 +1,17 @@
-<div class="container">
+<div class="container forms-global">
 
 <center>
 
-<h2>Log in</h2>
+<h2 class="landing-page-h1">Log in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="form-group">
-    <%= f.label :email %><br />
+    <p class="forms-labels"><%= f.label :email %></p><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
 
   <div class="form-group">
-    <%= f.label :password %><br />
+    <p class="forms-labels"><%= f.label :password %></p><br />
     <%= f.password_field :password, autocomplete: "current-password" %>
   </div>
 

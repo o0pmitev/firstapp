@@ -1,0 +1,25 @@
+.forms-global { margin-top: 100px; }
+
+ .forms-labels {
+    margin-top: 50px;
+    font-size: 3em;
+    text-align: center;
+    font-family: 'Black And White Picture', sans-serif;
+    color: #ffe007;
+  }
+
+#user_email, 
+#user_password, 
+#user_password_confirmation,
+#user_current_password { 
+    width: 50%;
+    height: 30px;
+    font-size: 1.5em;
+}
+
+.users-font {
+    font-size: 20px;
+    color: #ffe007;
+    text-align: center;
+
+}
