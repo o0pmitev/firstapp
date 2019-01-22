@@ -1,10 +1,12 @@
 <div class="container forms-global">
 <p id="notice"><%= notice %></p>
 <center>
-<h1 class="landing-page-h1">Users</h1>
+<div class="row">
 
-<table>
-  <thead>
+<h1 class="landing-page-h1 col-sm-12">Users</h1>
+
+<table class="col-sm-12 col-md-6>
+  <thead">
     <tr>
       <th class="users-font">First name</th>
       <th class="users-font">Email</th>
@@ -13,14 +15,14 @@
   </thead>
 <br />
 <br />
-  <tbody class="table table-bordered ">
+  <tbody class="table table-bordered col-sm-12">
     <% @users.each do |user| %>
       <tr>
         <td class="users-font"><%= user.first_name %> <%= user.last_name %></td>
         <td class="users-font"><%= user.email %></td>
-        <td><button type="button" class="btn btn-primary"><%= link_to 'Show', user %></button></td>
-        <td><button type="button" class="btn btn-success"><%= link_to 'Edit', edit_user_path(user) %></button></td>
-        <td><button type="button" class="btn btn-danger"><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
+        <td><center><button type="button" class="btn btn-primary"><%= link_to 'Show', user %></button></center></td>
+        <td><center><button type="button" class="btn btn-success"><%= link_to 'Edit', edit_user_path(user) %></button></center></td>
+        <td><center><button type="button" class="btn btn-danger"><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></button></center></td>
       </tr>
     <% end %>
   </tbody>
@@ -29,5 +31,6 @@
 <br>
 <!-- removed the ling to New User -->
 <% link_to 'New User', new_user_path %>
+</div>
 </center>
 </div>
