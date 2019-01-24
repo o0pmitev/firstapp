@@ -1,36 +1,46 @@
 <div class="container">
 
-<p id="notice"><%= notice %></p>
+  <p id="notice">
+    <%= notice %>
+  </p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+      <div class="thumbnail">
+        <center>
+          <%= image_tag @product.image_url %>
+          <div class="caption">
+            <br />
+            <h3 class="name-class">
+              <%= @product.name %>
+            </h3>
+            <p>
+              <%= @product.genre %>
+            </p>
+            <p class="description-class">
+              <%= @product.description %>
+              <br />
+            </p>
+            <p>
+              Price :
+              <%= @product.price %> $
+            </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
+            <p>
+              <%= @product.highest_rating_comment %>
+            </p>
+        </center>
+      </div>
+    </div>
+  </div>
+</div>
 
-<p>
-  <strong>Image url:</strong>
-  <%= @product.image_url %>
-</p>
 
-<p>
-  <strong>Genre: </strong>
-  <%= @product.genre %>
-</p>
 
-<p>
-  <strong>$</strong>
-  <%= @product.price %>
-</p>
 
-<p>
-  <%= @product.highest_rating_comment %> 
-</p>
-<%= link_to 'Edit', edit_product_path(@product) %> |
+
+<!-- removed link to edit button -->
+<% link_to 'Edit', edit_product_path(@product) %> 
 <%= link_to 'Back', products_path %>
 
 </div>
