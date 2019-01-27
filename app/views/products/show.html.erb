@@ -25,10 +25,14 @@
               Price :
               <%= @product.price %> $
             </p>
-
+           <div class="jumbotron comments-body col-sm-12 col-md-12"> 
+            <p class="highest-rating-comment">Customer review:</p>
             <p>
-              <%= @product.highest_rating_comment %>
+              <% if @product.comments.length > 0 %> 
+                 <p class="comment-font"> <%= @product.highest_rating_comment.body %> </p>
+              <% end %>
             </p>
+            </div>
         </center>
       </div>
     </div>
