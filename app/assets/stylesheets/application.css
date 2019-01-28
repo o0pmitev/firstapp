@@ -12,6 +12,8 @@
  *
  *= require_tree .
  *= require_self
+ *= require jquery.raty
+
  */
 .main-search-form {
   border-radius: 5px;
