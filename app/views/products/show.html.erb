@@ -41,7 +41,9 @@
 
 <%= render 'comments'%>
 
-    
+   <div class="comment-direct">
+      <%= will_paginate @comments, :page_links => false, class: "btn btn-default btn-xs" %>
+    </div>       
 
 
 <!-- removed link to edit button -->
