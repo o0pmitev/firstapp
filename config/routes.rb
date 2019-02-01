@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout' }
+  devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout' }, controllers: { registrations: "user_registrations" }
 
   resources :products do
     resources :comments
@@ -26,4 +26,5 @@ Rails.application.routes.draw do
           get '*path', to: redirect("/error")
 
 post 'simple_pages/thank_you'
+
 end

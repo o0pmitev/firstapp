@@ -16,4 +16,10 @@ default from: "from@example.com"
          to: 'books_berlin@abv.bg',
          subject:'finaly')
   end
+
+  def welcome(user)
+    @appname = "Books Berlin"
+    mail(to: user.email,
+         subject: "Welcome to #{@appname}!")
+  end
 end
