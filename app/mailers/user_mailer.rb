@@ -1,5 +1,5 @@
 class UserMailer < ApplicationMailer
-default from: "books_berlin@abv.bg"
+default from: "books_gberlin@abv.bg"
 
 
 
