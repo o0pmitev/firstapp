@@ -88,3 +88,5 @@ gem 'cancancan', '~> 2.0'
 #paginate
 gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 
+#stripe
+gem 'stripe'
