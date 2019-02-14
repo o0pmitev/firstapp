@@ -5,9 +5,13 @@ describe UsersController, type: :controller do
 
     describe 'GET #show' do
         context 'when a user is logged in' do
-            before(:each) do
-                sign_in user
-            end
+          before(:each) do
+            @request.env["devise.mapping"] = Devise.mappings[:user]
+            user = FactoryBot.build(:user)
+            # user = User.create!(:user)
+            sign_in user
+          end
+        end
             it "loads correct  user details" do
                 get :show, params: { id: user.id }
                 expect(response).to be_successful
@@ -24,4 +28,4 @@ describe UsersController, type: :controller do
     end
     end
 end
-end
+

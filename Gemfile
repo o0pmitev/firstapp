@@ -8,7 +8,7 @@ gem 'rails', '~> 5.2.1'
 # Use sqlite3 as the database for Active Record
 #Compiles only in the development and test enviroment
 group :development, :test do
-  gem 'sqlite3'
+  gem 'sqlite3', '~> 1.3', '< 1.4'
 end
 
 # Use Puma as the app server
@@ -61,6 +61,8 @@ end
 group :development, :test do
   gem 'rspec-rails', '~> 3.8'
   gem 'rails-controller-testing'
+  gem "factory_bot_rails", "~> 4.0"
+
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
