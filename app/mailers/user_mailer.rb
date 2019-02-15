@@ -23,9 +23,13 @@ default from: "books_gberlin@abv.bg"
          subject: "Welcome to #{@appname}!")
   end
 
-  def payment
+  def payment(user, product)
+    @user = user
+    @product = product
     @compleat = "Your order has been placed."
-    mail(to:user.email,
+    mail(
+      from:'books_berlin@abv.bg',
+      to:user.email,
       subject: "Congratulations #{@compleat}")
   end
 end
