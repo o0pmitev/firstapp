@@ -26,5 +26,5 @@ Rails.application.routes.draw do
           get '*path', to: redirect("/error")
 
 post 'simple_pages/thank_you'
-
+post 'payments/create'
 end
