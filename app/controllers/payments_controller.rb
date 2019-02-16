@@ -18,8 +18,8 @@ class PaymentsController < ApplicationController
             Order.create(
               product_id: @product.id,
               user_id: @user.id,
-              total: @product.price 
-            )
+              total: @product.price,
+             )
             UserMailer.payment(@user, @product).deliver_now
             flash[:notice] = "Payment processed successfully"
 
