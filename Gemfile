@@ -85,3 +85,6 @@ gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 
 #stripe
 gem 'stripe'
+
+#brakeman
+gem 'brakeman', '~> 4.4'
