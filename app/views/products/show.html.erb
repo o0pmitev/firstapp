@@ -34,7 +34,7 @@
                   <%= hidden_field_tag(:product_id, @product.id) %>
                 <% end %>
             </center>
-            <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+            <p>Average Rating: <div id="average-rating" class="rated" data-score="<%= @product.average_rating %>"></div> </p>
             <%= render 'new_comment' %>
            <div class="jumbotron comments-body col-sm-12 col-md-12"> 
             <p class="highest-rating-comment">Customer review:</p>
