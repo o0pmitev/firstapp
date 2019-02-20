@@ -88,3 +88,6 @@ gem 'stripe'
 
 #brakeman
 gem 'brakeman', '~> 4.4'
+
+#dalli 
+gem 'dalli'

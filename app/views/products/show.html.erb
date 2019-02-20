@@ -11,6 +11,11 @@
           <%= image_tag @product.image_url, class: "img-zoom", data_zoom_image: "@product.image_url" %>
           <div class="caption">
             <br />
+
+            
+          
+          <% cache @product do %>
+
             <h3 class="name-class">
               <%= @product.name %>
             </h3>
@@ -25,6 +30,11 @@
               Price :
               <%= @product.price %> $
             </p>
+
+          <% end %>
+
+
+
             <center>
 
             

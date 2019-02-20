@@ -1,7 +1,8 @@
 <div class="col-xs-12 col-md-4">
   <center><%= image_tag(product.image_url, class: "img-fluid") unless product.image_url.nil? %></center>
-
   <div class="name-class">
+  <% cache product do%>
+
     <%= product.name %> <br>
   </div>
 
@@ -22,5 +23,7 @@
   <!-- removed the links for edit and destroy -->
   <% link_to 'Edit', edit_product_path(product) %>
   <% link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+  
+  <% end %>
   </div>
 </div><!-- /col -->
