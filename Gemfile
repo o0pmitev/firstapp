@@ -91,3 +91,9 @@ gem 'brakeman', '~> 4.4'
 
 #dalli 
 gem 'dalli'
+
+#redis
+gem 'redis-rails'
+
+#newrelic
+gem 'newrelic_rpm'
