@@ -1,8 +1,14 @@
 <div class="container">
+
+<% cache do%>  
+  
   <h1 class="landing-page-h1">Books Berlin</h1>
   <h2 class="landing-page-h2">Bookstore for new books, used books and antique books</h2>
   <div class="in-stock text-center">
     <%= image_tag("book1.png", class: "img-responsive book1") %>
+
+<% end %>  
+  
   </div><!-- /in-stock -->
 
   <h2 class="header-layout">Featured Products</h2>
