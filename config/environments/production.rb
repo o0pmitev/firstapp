@@ -98,6 +98,7 @@ Rails.application.configure do
   #dalli
   config.cache_store = :dalli_store
 
-
+  config.web_socket_server_url = "wss://books-berlin.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = ['https://books-berlin.herokuapp.com', 'http://books-berlin.herokuapp.com']
 
 end
