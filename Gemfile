@@ -96,4 +96,4 @@ gem 'dalli'
 gem 'redis-rails'
 
 #newrelic
-gem 'newrelic_rpm'
+gem 'newrelic_rpm'  

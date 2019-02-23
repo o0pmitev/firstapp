@@ -33,12 +33,14 @@
 
           <% end %>
 
-
+            <h6 class="name-class">
+              Views:
+              <span class="name-class">
+                <%= @product.views %> <!-- showing the number of times the page was viewed -->
+              </span>
+            </h6>
 
             <center>
-
-            
-           
                 <%= form_with(url: '/payments/create') do |form| %>
                   <%= render partial: "shared/stripe_checkout_button" %>
                   <%= hidden_field_tag(:product_id, @product.id) %>

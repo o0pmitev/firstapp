@@ -29,4 +29,14 @@ class Product < ApplicationRecord
   def lowest_rating_comment
     comments.rating_desc.last
   end
+
+
+	def views
+		$redis.get("product:#{id}")	
+	end
+
+	def viewed!
+		$redis.incr("product:#{id}") 
+  end
+  
 end
