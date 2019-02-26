@@ -2,7 +2,6 @@
 $("#new_comment").html("Thank you for your review!");
 
 <!-- place the new comment infront of the other comments-->
-$('.product-reviews').prepend("<%= j render @comment %>")
 
 <!-- update the average-rating -->
 $("#average-rating").attr('data-score', "<%= @product.average_rating %>");
