@@ -2,16 +2,18 @@
 
   <div class="row orders-style">
     <% @orders.each do |order| %>
-      <div class="col-sm">
-        <h1>
-          Order # <%= order.id %>
-        </h1>
-        <p>
-          <%= link_to order.product.name, order %> <br>
-          <%= order.product.description %>
-        </p>
-        <strong>$ <%= order.product.price %></strong>
-      </div><!-- /col -->
+    <div class="col-sm">
+      <h1>
+        Order #
+        <%= order.id %>
+      </h1>
+      <p>
+        <%= link_to order.product.name, order %> <br>
+        <%= order.product.description %>
+      </p>
+      <strong>$
+        <%= order.product.price %></strong>
+    </div><!-- /col -->
     <% end %>
   </div><!-- /row -->
 

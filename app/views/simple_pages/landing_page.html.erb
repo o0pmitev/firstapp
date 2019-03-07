@@ -1,14 +1,14 @@
 <div class="container">
 
-<% cache do%>  
-  
+  <% cache do%>
+
   <h1 class="landing-page-h1">Books Berlin</h1>
   <h2 class="landing-page-h2">Bookstore for new books, used books and antique books</h2>
   <div class="in-stock text-center">
     <%= image_tag("book1.png", class: "img-responsive book1") %>
 
-<% end %>  
-  
+    <% end %>
+
   </div><!-- /in-stock -->
 
   <h2 class="header-layout">Featured Products</h2>
@@ -22,15 +22,18 @@
     <div class="carousel-inner">
       <div class="carousel-inner">
         <% @products.each do |product| %>
-          <div class="carousel-item<%= " active" if product == @products.first %>">
-            <%= image_tag(product.image_url) %>
+        <div class="carousel-item<%= " active" if product==@products.first %>">
+          <%= image_tag(product.image_url) %>
 
-            <div class="carousel-caption d-none d-md-block">
-              <strong class="title"><%= product.name %></strong><br>
-              <strong>genre:</strong> <%= product.genre %><br>
-              <i>Price: <%= product.price %> $ </i>
-            </div>
+          <div class="carousel-caption d-none d-md-block">
+            <strong class="title">
+              <%= product.name %></strong><br>
+            <strong>genre:</strong>
+            <%= product.genre %><br>
+            <i>Price:
+              <%= product.price %> $ </i>
           </div>
+        </div>
         <% end %>
       </div>
     </div>

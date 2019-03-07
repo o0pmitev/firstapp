@@ -50,8 +50,9 @@ group :development do
 
 end
 
-#rspec
+
 group :development, :test do
+  #rspec
   gem 'rspec-rails', '~> 3.8'
   gem 'rails-controller-testing'
   gem "factory_bot_rails", "~> 4.0"

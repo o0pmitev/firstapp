@@ -15,16 +15,3 @@
  *= require jquery.raty
 
  */
-.main-search-form {
-  border-radius: 5px;
-}
-.main-search-button {
-  border-radius: 5px;
-  margin-left: 5px;
-  height: 26px;
-  background-color: #ff000069;
-  color: #c4da0a;
-}
-.main-search-button:hover {
-  background-color: #ff000000;
-}

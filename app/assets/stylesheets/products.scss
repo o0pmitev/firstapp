@@ -11,18 +11,17 @@
 
 .img-fluid {
   border: outset yellow 2px;
-  // height: 400px;
-  // width: 100%;
 }
 
-.name-class{
+.name-class {
   text-align: center;
   margin: 10px 0;
   font-size: 17px;
   color: yellow;
 }
+
 .description-class {
-  color:#f1ce82;
+  color: #f1ce82;
   font-size: 13px;
 }
 
@@ -36,10 +35,11 @@
   margin-top: 5px;
   margin-bottom: 30px;
   text-align: center;
-  border: dotted  2px #7d7d5f38;
+  border: dotted 2px #7d7d5f38;
   border-radius: 20px;
   background-color: #3535299c;
 }
+
 /************ forms ***************/
 
 .form-label {
@@ -49,7 +49,7 @@
 }
 
 .btn-form {
-  margin-top : 20px;
+  margin-top: 20px;
   background-color: #a52a2a !important;
   color: yellow;
 }
@@ -67,19 +67,22 @@
   font-size: 15px;
   letter-spacing: 0.5px;
 }
+
 .form-margin-bot {
   margin-bottom: -10px;
 }
 
 /***************COMENTS*****************/
 .comments-body {
-background-color: #a52a2a69;
-width: 50%; }
+  background-color: #a52a2a69;
+  width: 50%;
+}
 
 .comment-font {
-  font-family:'Charm', cursive; 
+  font-family: 'Charm', cursive;
   font-size: 2em;
 }
+
 .highest-rating-comment {
   font-size: 1.5em;
   text-decoration: underline;
