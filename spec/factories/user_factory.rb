@@ -11,6 +11,7 @@ FactoryBot.define do
         admin {false}
     end
 
+
     factory :admin, class: User do
         email 
         password {"qwertyuiop"}

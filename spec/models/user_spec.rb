@@ -20,16 +20,25 @@ describe User do
     end
 
     it "cant create user without first name" do
-        # expect(User.new(first_name:nil)).not_to be_valid
-        @user = FactoryBot.build(:user, first_name:nil)
-        expect(@user).to be_valid 
+        expect(User.new(first_name:nil)).not_to be_valid
+        # @user = FactoryBot.build(:user, first_name:nil)
+        # expect(@user).to be_valid 
     end
 
+
+    it "can not create user without last name" do
+        expect(User.new(last_name:nil)).not_to be_valid
+    end
+
+    it "can create user with first, last name, email and password" do
+        expect(@user).to be_valid
+    end
+    
 end
 
 describe User, type: :model do
     it "should not validate users without an email address" do
-      @user = FactoryBot.build(:user, email: "not_an_email")
-      expect(@user).to_not be_valid
+      @user = FactoryBot.build(:user, email: nil)
+      expect(@user).not_to be_valid
     end
-  end
+end
