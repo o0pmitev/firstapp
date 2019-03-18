@@ -98,3 +98,6 @@ gem 'redis-rails'
 
 #newrelic
 gem 'newrelic_rpm'  
+
+#simpleCov
+gem 'simplecov', require: false, group: :test
