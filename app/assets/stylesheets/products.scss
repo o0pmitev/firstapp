@@ -1,7 +1,23 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-/********************* BOOKS *********************/
+
+/*global_style*/
+
+#product-page-style {
+  color: white;
+}
+
+#new-product-heading {
+  margin-top: 70px;
+}
+
+#notice {
+  margin-top: 70px;
+}
+
+/*books*/
+
 #new-product-heading {
   font-size: 90px;
   color: #ffe007;
@@ -40,7 +56,7 @@
   background-color: #3535299c;
 }
 
-/************ forms ***************/
+/*forms*/
 
 .form-label {
   margin-top: 20px;
@@ -52,11 +68,10 @@
   margin-top: 20px;
   background-color: #a52a2a !important;
   color: yellow;
-}
-
-.btn-form:hover {
-  background: #a52a2a00 !important;
-  color: yellow;
+  &:hover {
+    background: #a52a2a00 !important;
+    color: yellow;
+  }
 }
 
 .form-size {
@@ -72,41 +87,20 @@
   margin-bottom: -10px;
 }
 
-/***************COMENTS*****************/
-.comments-body {
-  background-color: #a52a2a69;
-  width: 50%;
+/* orders */
+
+.orders-style {
+  margin-top: 70px;
+  color: yellow;
 }
 
-.comment-font {
-  font-family: 'Charm', cursive;
-  font-size: 2em;
+/* hoover */
+
+a:visited {
+  color: #f1f1f1;
 }
 
-.highest-rating-comment {
-  font-size: 1.5em;
-  text-decoration: underline;
-  color: #ffe007;
+a {
+  color: yellow;
 }
 
-.old-comments {
-  border: 5px solid #a52a2a;
-  background-color: #00000082;
-  margin-bottom: 20px;
-  padding: 20px;
-}
-
-text_area {
-  width: 50%;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  height: 200px;
-}
-
-#comment_body {
-  width: 50%;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  height: 200px;
-  resize: none;
-}

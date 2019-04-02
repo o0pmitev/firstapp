@@ -1,3 +1,43 @@
 // Place all the styles related to the comments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*comments*/
+
+.comments-body {
+  background-color: #a52a2a69;
+  width: 50%;
+}
+
+.comment-font {
+  font-family: 'Charm', cursive;
+  font-size: 2em;
+}
+
+.highest-rating-comment {
+  font-size: 1.5em;
+  text-decoration: underline;
+  color: #ffe007;
+}
+
+.old-comments {
+  border: 5px solid #a52a2a;
+  background-color: #00000082;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+text_area {
+  width: 50%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 200px;
+}
+
+#comment_body {
+  width: 50%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 200px;
+  resize: none;
+}

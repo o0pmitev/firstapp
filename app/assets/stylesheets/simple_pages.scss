@@ -3,10 +3,18 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-/********************* NAVIGATION *********************/
-.navbar-brand {
-  font-family: 'Biryani', sans-serif;
-  color: red !important;
+/*navigtion*/
+
+#navbarID {
+  background-color: brown !important;
+}
+
+.navbar-brand a {
+  text-decoration: none;
+  &:hover{
+    background-color:inherit;
+    color: black;
+  }
 }
 
 .nav-item {
@@ -14,25 +22,20 @@
   margin-left: 10px;
   text-transform: uppercase;
   font-family: 'Biryani', sans-serif;
+  a {
+    color: red !important;
+  }
+  a:hover {
+    background-color: #a52a2a !important;
+    color: orange !important;
+    text-decoration: none;
+    transition: color 600ms;
+    -webkit-transition: color 600ms;
+  }
 }
 
-#navbarID {
-  background-color: brown !important;
-}
+/*global-style*/
 
-nav a:hover {
-  background-color: #a52a2a !important;
-  color: orange !important;
-  text-decoration: none;
-  transition: color 600ms;
-  -webkit-transition: color 600ms;
-}
-
-.nav-item a {
-  color: red !important;
-}
-
-/********************* global-style *********************/
 body {
   background: url(asset-path('background.jpg')) no-repeat;
   background-size: 100% 100%;
@@ -55,7 +58,8 @@ footer {
   width: 100%;
 }
 
-/********************* Landing-page *********************/
+/*landing-page*/
+
 header {
   text-align: center;
   color: #ffe007;
@@ -85,50 +89,6 @@ header {
   padding: 0;
 }
 
-/********************* ABOUT PAGE *********************/
-.about-header {
-  text-align: center;
-  color: #ffe007;
-  text-shadow: 0.5px 0.5px black;
-}
-
-.about-header h1 {
-  font-family: 'Black And White Picture', sans-serif;
-}
-
-.about-header p {
-  font-family: 'Biryani', sans-serif;
-}
-
-/******************** CONTACT PAGE ********************/
-.contact-header {
-  color: #ffe007;
-  text-shadow: 0.5px 0.5px black;
-}
-
-.contact-header h1 {
-  text-align: center;
-  font-family: 'Black And White Picture', sans-serif;
-}
-
-.contact-header ul {
-  list-style-type: none;
-  text-align: center;
-  margin-right: 30px;
-  font-family: 'Biryani', sans-serif;
-}
-
-.form-title {
-  font-family: 'Black And White Picture', sans-serif;
-  color: #ffe007;
-  font-size: 2em;
-}
-
-.max-box {
-  margin-right: 13%;
-}
-
-/********************** LANDING PAGE **************/
 .header-layout {
   text-align: center;
   font-family: 'Black And White Picture', sans-serif;
@@ -156,6 +116,49 @@ image_url {
   color: yellow;
 }
 
+
+/*about-page*/
+
+.about-header {
+  text-align: center;
+  color: #ffe007;
+  text-shadow: 0.5px 0.5px black;
+  h1 {
+    font-family: 'Black And White Picture', sans-serif;
+  }
+  p {
+    font-family: 'Biryani', sans-serif;
+  }
+}
+
+/*contact page*/
+
+.contact-header {
+  color: #ffe007;
+  text-shadow: 0.5px 0.5px black;
+  h1 {
+    text-align: center;
+    font-family: 'Black And White Picture', sans-serif;
+  }
+  ul {
+    list-style-type: none;
+    text-align: center;
+    margin-right: 30px;
+    font-family: 'Biryani', sans-serif;
+  }
+}
+
+.form-title {
+  font-family: 'Black And White Picture', sans-serif;
+  color: #ffe007;
+  font-size: 2em;
+}
+
+.max-box {
+  margin-right: 13%;
+}
+
+
 /*routesButtons*/
 
 #routesButton {
@@ -164,7 +167,7 @@ image_url {
   text-transform: uppercase;
 }
 
-/* alerts */
+/*alerts*/
 
 .alert,
 .notice {
